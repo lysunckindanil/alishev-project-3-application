@@ -19,21 +19,12 @@ public class SensorService {
         sensorRepository.save(sensor);
     }
 
-    public Optional<Sensor> findById(Long id) {
-        return sensorRepository.findById(id);
-    }
-
     public Optional<Sensor> findByName(String name) {
         return sensorRepository.findByName(name);
     }
 
-
     public Sensor toSensor(SensorDTO sensor) {
         return modelMapper.map(sensor, Sensor.class);
-    }
-
-    public SensorDTO toSensorDTO(Sensor sensor) {
-        return modelMapper.map(sensor, SensorDTO.class);
     }
 
 }

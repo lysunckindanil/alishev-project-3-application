@@ -1,12 +1,7 @@
 package rest.project.app.models;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import org.apache.tomcat.Jar;
-import org.hibernate.mapping.Join;
 
 import java.util.Date;
 

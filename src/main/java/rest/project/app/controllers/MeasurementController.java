@@ -10,7 +10,6 @@ import rest.project.app.models.Measurement;
 import rest.project.app.models.MeasurementDTO;
 import rest.project.app.services.MeasurementService;
 import rest.project.app.util.InvalidMeasurementException;
-import rest.project.app.util.InvalidSensorNameException;
 import rest.project.app.util.MeasurementValidator;
 import rest.project.app.util.ResponseMessage;
 
