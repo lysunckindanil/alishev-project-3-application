@@ -37,10 +37,11 @@ public class MeasurementController {
     }
 
     @GetMapping()
-    public ResponseEntity<List<MeasurementDTO>> getAllMeasurements() {
+    public ResponseEntity<List<Measurement>> getAllMeasurements() {
         return new ResponseEntity<>
-                (measurementService.findAll().stream().map(measurementService::toMeasurementDTO).toList(), HttpStatus.OK);
+                (measurementService.findAll(), HttpStatus.OK);
     }
+
 
     @GetMapping("/rainyDaysCount")
     public Long getRainyDays() {

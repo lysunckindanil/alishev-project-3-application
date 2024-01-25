@@ -5,6 +5,6 @@ import lombok.Data;
 
 @Data
 public class SensorDTO {
-    @NotEmpty(message = "name should not be empty")
+    @NotEmpty(message = "Name should not be empty")
     private String name;
 }
